@@ -17,6 +17,9 @@ class Router {
     public function resolve(){
         $uri = $this->request->getPath();
         $method = $this->request->getMethod();
+        if(!$this->routes[$method] || !$this->routes[$method][$uri]){
+            return 'Not Found';
+        }
         $callback = $this->routes[$method][$uri];
         return call_user_func($callback);
     }
