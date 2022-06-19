@@ -1,0 +1,15 @@
+{
+    "name": "alfredo/harmonic",
+    "autoload": {
+        "psr-4": {
+            "app\\": "./"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alfredo Neto",
+            "email": "alfredoneto934@gmail.com"
+        }
+    ],
+    "require": {}
+}
